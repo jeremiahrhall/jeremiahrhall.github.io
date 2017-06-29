@@ -1,0 +1,197 @@
+{
+  "resume": {
+    "name": "Jeremiah Hall",
+    "resume_repo": "https://github.com/jeremiahrhall/jeremiahrhall.github.io/tree/master/resume",
+    "resume_link": "https://github.com/jeremiahrhall/jeremiahrhall.github.io/tree/master/resume",
+    "twitter": "jeremiahrhall",
+    "github": "jeremiahrhall",
+    "linkedin": "http://www.linkedin.com/pub/jeremiah-hall/7/954/1/",
+    "website": "http://www.jeremiahrhall.com",
+    "email": "me@jeremiahrhall.com",
+    "avatar": "https://avatars1.githubusercontent.com/u/451734?s=460",
+    "objective": "Lead the development of innovative high-quality software, implement best practices, and explore new technologies.",
+    "headline": "Senior Software Engineer",
+    "summary": "Creative and passionate senior software engineer with innovative vision, a disciplined work ethic, and the ability to communicate technical concepts with clarity.",
+    "positions": [
+      {
+        "title": "Senior Software Engineer",
+        "url": "http://www.opengov.com",
+        "company": "OpenGov",
+        "start_date": "March 2016",
+        "end_date": "Current",
+        "location": "Portland, OR",
+        "description": "Created interactive, WebGL accelerated map visualizations handling tens of thousands of GeoJSON features in a React/Redux/Immutable.js application. Created and released two NPM packages with an MIT license: react-leaflet-cluster-layer and react-leaflet-heatmap-layer. Contributed to Ruby/Rails backend handling CRUD operations and PostGIS queries. Took on the role of ScrumMaster for a distributed team. Mentored and supported junior engineers. Provided architectural guidance for the implementation of a new event driven service architecture. Modernized JavaScript tooling and optimized Webpack builds in multiple applications."
+      },
+      {
+          "title": "Senior Software Developer",
+          "url": "http://www.provatahealth.com",
+          "company": "Provata Health",
+          "start_date": "May 2015",
+          "end_date": "March 2016",
+          "location": "Lake Oswego, OR",
+          "description": "Implemented new features in React/Flux/Immutable.js application. Modernized JavaScript tooling and language support with Webpack build optimizations, hot loading, ES6 migration, and a Node.js major version upgrade. Improved the performance of the VR video player in “Provata VR” for iOS, now available in the App Store. Upgraded Java services to Jersey 2 and Java 8. Implemented and seamlessly transitioned to OAuth 2.0 with JWT Bearer Tokens for authentication and authorization. Implemented authorization framework for Jersey services and many other features."
+      },
+      {
+        "title": "Senior Software Engineer",
+        "url": "http://www.seabourneinc.com",
+        "company": "Seabourne Consulting",
+        "start_date": "September 2014",
+        "end_date": "May 2015",
+        "location": "Portland, OR",
+        "description": "Lead engineering and architecture efforts. Conduct code reviews. Provide architectural guidance for new projects. Standardize design patterns and coding best practices. Manage Amazon AWS infrastructure. Full-stack web development with Node.js, Backbone, Angular, and React.",
+        "projects": [
+          {
+            "name": "DataDash.io",
+            "url": "http://datadash.io",
+            "description": "Lead the design and implementation of a distributed, scalable reporting and visualization platform."
+          },
+          {
+            "name": "WRI Pledges",
+            "url": "http://cait.wri.org/pledges",
+            "description": "Developed a web application to visualize, explore and share international climate pledge data."
+          },
+          {
+            "name": "WRI Climate Analysis and Indicators Tool",
+            "url": "http://cait.wri.org",
+            "description": "Developed a web application to visualize, explore, and share historical climate data."
+          },
+          {
+            "name": "PNW SmartGrid Data Explorer",
+            "screenshot": "http://www.jeremiahrhall.com/resume/images/pnw.png",
+            "description": "Developed APIs and web applications with Node.js, MongoDB, and Backbone. Worked throughout the project lifecycle to describe the team’s technical capabilities, create software architectures, and inform design decisions with a technical perspective."
+          }
+        ]
+      },
+      {
+        "title": "Data Engineer",
+        "company": "Seabourne Consulting",
+        "url": "http://www.seabourneinc.com",
+        "start_date": "January 2014",
+        "end_date": "September 2014",
+        "location": "Portland, OR",
+        "description": "Developed APIs and web applications with Node.js, MongoDB, and Backbone. Worked throughout the project lifecycle to describe the team’s technical capabilities, create software architectures, and inform design decisions with a technical perspective."
+      },
+      {
+        "title": "Founder",
+        "company": "Aspect Apps",
+        "start_date": "January 2013",
+        "end_date": "Current",
+        "location": "Portland, OR",
+        "description": "Building an iOS journaling application that mixes journal entries with calendar events, reminders, mail messages, and web history. Utilizes React Native and JavaScript for the user interface. It also uses Core Data, Swift, EventKit, and others to provide an integrated user experience."
+      },
+      {
+        "title": "Java Developer",
+        "company": "ProSchools",
+        "url": "http://www.proschools.com",
+        "start_date": "August 2013",
+        "end_date": "January 2014",
+        "location": "Portland, OR",
+        "description": "Implemented new features in Tomcat J2EE web application including MySQL database schema changes, new Java beans, and modifications to a JSP and Dojo frontend. Managed project Maven dependencies, Gitlab merge requests, Hudson configurations and builds, and manual deployments to Windows-hosted Tomcat servers. Developed JBoss RESTful API to integrate user management with Salesforce. Reviewed outages and performance metrics in New Relic APM."
+      },
+      {
+        "title": "Developer",
+        "company": "ServiceNow, Inc.",
+        "url": "http://www.servicenow.com",
+        "start_date": "February 2010",
+        "end_date": "June 2011",
+        "location": "San Diego, CA",
+        "description": "Developed the High Availability plugin to provide vendor-agnostic database replication, failover, and automated migration between databases. Developed new features in ServiceNow's core Java platform. Fixed bugs across the entire stack from debugging Bash scripts to resolving database layer issues in Java to client-side JavaScript and CSS styling. Debugged memory leaks, database race conditions, and other resource contention issues with YourKit profiler."
+      },
+      {
+        "title": "Associate Developer",
+        "company": "ServiceNow, Inc.",
+        "url": "http://www.servicenow.com",
+        "start_date": "March 2007",
+        "end_date": "February 2010",
+        "location": "Solana Beach, CA",
+        "description": "Developed automation for use by the technical support and operations teams using JavaScript, ServiceNow’s Runbook Automation, and Bash scripts. Fixed bugs in ServiceNow Java platform. Worked with customers to develop, test, deploy, and configure ServiceNow Discovery functionality for populating and monitoring a CMDB. Provided 24-hour on call support in a rotation with the technical support team."
+      },
+      {
+        "title": "Consultant",
+        "company": "Robert Half Technology",
+        "start_date": "August 2006",
+        "end_date": "March 2007",
+        "location": "Carlsbad, CA",
+        "description": "Maintained, debugged, and performed periodic feature updates to ASP web application. Integrated external client web sites with ASP web application so that users viewed a branded portal. Debugged stored procedures for performance tuning on SQL Server 2005. Enhanced web application to receive and handle customer assistance requests."
+      },
+      {
+        "title": "Web Developer",
+        "company": "ATN",
+        "start_date": "2001",
+        "end_date": "2006",
+        "location": "Solana Beach, CA",
+        "description": "Developed Java application for conversion of raw data files to formatted spreadsheets for use by sales call center. Developed and maintained vendor portal around ASP.NET on MSSQL Server 2000. Designed and maintained many web sites consisting of hundreds of pages. Lead migration of hosted properties to LAMP platform. Responsible for system installation, upgrades, and maintenance of Windows servers."
+      }
+    ],
+    "studies": [
+      {
+        "name": "UCSD - Computer Engineering",
+        "start_date": "2004",
+        "end_date": "2006",
+        "notes": ""
+      },
+      {
+        "name": "Self Study",
+        "start_date": "1999",
+        "end_date": "Current",
+        "notes": "Always learning. Always exploring. Completed 'Functional Programming Principles in Scala' taught by Martin Odersky on Coursera in late 2013."
+      }
+    ],
+    "skills": [
+      "Software Engineering",
+      "Software Architecture",
+      "Web Applications",
+      "Functional Reactive Programming",
+      "React.js",
+      "Redux",
+      "Immutable.js",
+      "Data Visualization",
+      "ServiceNow",
+      "API Design",
+      "Test Driven Development",
+      "AWS",
+      "DevOps",
+      "Java",
+      "JavaScript",
+      "Objective-C",
+      "Swift",
+      "Node.js",
+      "Linux",
+      "Mac OS X",
+      "iOS",
+      "React Native",
+      "Git",
+      "SQL",
+      "CSS",
+      "SASS",
+      "Cocoa",
+      "Core Data",
+      "IntelliJ",
+      "Xcode"
+    ],
+    "publications": [
+      {
+        "title": "Developing a React.js Edge, Second Edition: The JavaScript Library for User Interfaces",
+        "role": "Co-author",
+        "url": "http://shop.oreilly.com/product/9781939902290.do"
+      },
+      {
+        "title": "Provata VR - Guided Meditation & Mindfulness",
+        "role": "Contributor",
+        "url": "https://itunes.apple.com/us/app/provata-vr-guided-meditation/id1121506806?mt=8"
+      }
+    ],
+    "opensource": [
+      {
+        "title": "react-leaflet-cluster-layer",
+        "role": "Author",
+        "url": "https://www.npmjs.com/package/react-leaflet-cluster-layer"
+      },
+      {
+        "title": "react-leaflet-heatmap-layer",
+        "role": "Author",
+        "url": "https://www.npmjs.com/package/react-leaflet-heatmap-layer"
+      }
+    ]
+  }
+}

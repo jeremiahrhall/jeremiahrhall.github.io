@@ -1,0 +1,484 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.printUrl {
+    display: none;
+}
+
+#ContainerView {
+    width: 100%;
+    overflow: auto; /* clearfix */
+}
+
+#ContactInfoView {
+    /*width: 200px;*/
+    float: right;
+    padding-left: 1em;
+    margin-right: .25em;
+    margin-top: 1.5em;
+    /*margin-bottom: 1em;*/
+    display: inline-block;
+    height: 130px;
+}
+
+.fa {
+    font-size: 14px;
+    margin-right: .5em;
+    display: inline-block;
+}
+
+.url {
+    font-family: "Open Sans", sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: .25em;
+    /*padding-right: .25em;*/
+    display: inline-block;
+}
+
+.header {
+    display: block;
+}
+
+.info {
+    display: inline-block;
+}
+
+.info .website {
+    font-family: "Open Sans", monospace;
+    font-size: 12px;
+    padding-top: .5em;
+}
+
+.space {
+    height: 130px;
+}
+
+#HeadlineView {
+    float: left;
+    /*width: 50%;*/
+    padding-left: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: block;
+}
+
+#HeadlineView > * {
+    display: block;
+}
+
+.headline {
+    font-family: "Open Sans", monospace;
+    font-size: 14px;
+    font-weight: 600;
+    padding-top: .5em;
+}
+
+.info .phone {
+    font-family: "Open Sans", monospace;
+    font-size: 12px;
+    padding-top: .5em;
+}
+
+.info .email {
+    font-family: "Open Sans", monospace;
+    font-size: 12px;
+    padding-top: .5em;
+}
+
+#HeadlineView .name {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+
+}
+
+.social {
+    vertical-align: top;
+    font-family: "Anonymous Pro", monospace;
+    font-size: 11px;
+    height: 150px;
+    padding-left: 1em;
+    margin-bottom: 1em;
+    display: inline-block;
+}
+
+.social > * {
+    padding-top: .5em;
+    margin-bottom: .25em;
+}
+
+.social .twitter {
+    padding-top: .75em;
+}
+
+.avatar {
+    width: 130px;
+    height: 130px;
+    float: right;
+    display: inline-block;
+    text-align: right;
+    padding: 1em;
+}
+
+.avatarImage {
+    height: 100px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+/*#AvatarView {
+    display: inline-block;
+}
+
+.avatar {
+    width: 130px;
+    height: 130px;
+    display: inline-block;
+    text-align: right;
+    padding: 1em;
+}
+
+.avatarImage {
+    height: 100px;
+    border-radius: 4px;
+    display: inline-block;
+}*/
+
+.objective {
+    font-family: "Open Sans", serif;
+    font-size: 11px;
+    padding-left: 1em;
+    width: 100%;
+}
+
+.objectiveContainer {
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-bottom: .5em;
+    width: 100%;
+}
+
+.summary {
+    font-family: "Open Sans", serif;
+    font-size: 11px;
+    padding-left: 1em;
+}
+
+.summaryContainer {
+
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-bottom: .5em;
+    width: 100%;
+}
+
+.sectionTitle {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    margin-bottom: .25em;
+}
+
+.sectionSubTitle {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    margin-bottom: .25em;
+}
+
+#ExperienceView {
+
+    width: 100%;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.positionContainer {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.position {
+    margin-bottom: .25em;
+
+    /*padding-left: 1em;*/
+    /*padding-right: 1em;*/
+}
+
+.position .title,
+.position .company,
+.position .start_date,
+.position .end_date,
+.position .location {
+    font-family: "Open Sans", sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: .25em;
+    /*padding-right: .25em;*/
+    display: inline-block;
+}
+
+#FooterView {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.repo {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: .25em;
+    /*padding-right: .25em;*/
+    display: inline-block;
+}
+
+.printRepo {
+    display:none;
+}
+
+.position .title {
+    font-weight: 700;
+}
+
+.position .description {
+    font-family: "Open Sans", serif;
+    font-size: 11px;
+}
+
+.studiesContainer {
+
+    padding-top: 1em;
+    width: 100%;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-bottom: 1em;
+}
+
+#ExpertiseView {
+    vertical-align: top;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-bottom: .5em;
+    width: 100%;
+}
+
+.skillsContainer {
+    text-align: justify;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.skillContainer {
+    vertical-align: top;
+    width: 50%;
+    /*padding-left: 1em;
+    padding-right: 1em;*/
+    margin-bottom: 1em;
+    display: inline-block;
+}
+
+.skill {
+    font-family: "Open Sans", monospace;
+    font-size: 11px;
+    display: inline-block;
+    padding-right: .5em;
+    padding-left: .5em;
+    margin-top: .125em;
+    margin-bottom: .125em;
+    margin-right: .125em;
+    margin-left: .125em;
+    border: 1px #CCC solid;
+    border-radius: 2px;
+}
+
+.study .name,
+.study .start_date,
+.study .end_date {
+    font-family: "Open Sans", sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: .25em;
+    /*padding-right: .25em;*/
+    display: inline-block;
+}
+
+.study .name {
+    font-weight: 700;
+}
+
+.study .notes {
+    font-family: "Open Sans", serif;
+    font-size: 11px;
+}
+
+.study {
+    padding-top: .5em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.repoContainer {
+
+    width: 100%;
+    font-family: "Anonymous Pro", monospace;
+    font-size: 10px;
+    text-align: center;
+    display: inline-block;
+}
+
+.projectsContainer {
+    margin-top: .25em;
+    margin-bottom: .5em;
+    margin-left: .25em;
+}
+
+.projectHistoryContainer {
+}
+
+.projectHistory {
+    font-family: "Open Sans", serif;
+    font-size: 11px;
+    vertical-align: top;
+    display: inline-block;
+    width: 48%;
+    margin-left: .5em;
+    margin-bottom: .5em;
+}
+
+.projectHistory .name
+{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 11px;
+    margin-bottom: .25em;
+    padding-right: .25em;
+    display: inline-block;
+}
+
+.projectHistory .role {
+    font-family: "Open Sans", sans-serif;
+    font-style: italic;
+    font-size: 11px;
+    margin-bottom: .25em;
+    padding-right: .25em;
+    display: inline-block;
+}
+
+.contributionContainer {
+    text-align: justify;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 1em;
+}
+
+.contribution {
+  padding-top: .5em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.contribution .title,
+.contribution .role {
+    font-family: "Open Sans", sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: .25em;
+    /*padding-right: .25em;*/
+    display: inline-block;
+}
+
+.contribution .role {
+  font-weight: 700;
+}
+
+.publicationContainer {
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-top: 1em;
+}
+
+.work {
+padding-top: .5em;
+padding-left: 1em;
+padding-right: 1em;
+}
+
+.work .title,
+.work .role {
+  font-family: "Open Sans", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  margin-bottom: .25em;
+  /*padding-right: .25em;*/
+  display: inline-block;
+}
+
+.work .role {
+  font-weight: 700;
+}
+
+@media (max-width:505px) {
+    #ContactInfoView {
+        margin-top: 0;
+        float: none;
+    }
+    #HeadlineView {
+        margin-bottom: 0;
+    }
+    .space {
+        height: 0px;
+    }
+    .projectHistory {
+        width: 100%;
+    }
+}
+
+@media print {
+    .position {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    .projectsContainer {
+        display: none;
+    }
+
+    @page {
+      margin: 1cm;
+    }
+
+
+    /*#ContainerView {
+        margin-top: 1em;
+    }*/
+
+    .printUrl {
+        font-family: "Open Sans", sans-serif;
+        font-size: 11px;
+        font-weight: 600;
+        margin-bottom: .25em;
+        /*padding-right: .25em;*/
+        display: inline-block;
+    }
+
+    .printRepo {
+        font-family: "Open Sans", sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        margin-bottom: .25em;
+        /*padding-right: .25em;*/
+        display: inline-block;
+    }
+
+    .repo {
+        display:none;
+    }
+
+    .url {
+        display: none;
+    }
+}

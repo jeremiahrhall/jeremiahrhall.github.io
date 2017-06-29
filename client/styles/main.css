@@ -1,0 +1,206 @@
+h1 {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 450%;
+    text-transform: uppercase;
+}
+
+.title {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 300%;
+}
+
+.nav > li {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 300%;
+}
+
+/* cover.css */
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+    color: #fff;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+    color: #333;
+    text-shadow: none; /* Prevent inheritence from `body` */
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+    height: 100%;
+    background-color: #333;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-image: url('../images/background.jpg');
+}
+body {
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 4px rgba(0,0,0,.75);
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+    display: table;
+    width: 100%;
+    height: 100%; /* For at least Firefox */
+    min-height: 100%;
+    -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+    box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}
+.site-wrapper-inner {
+    display: table-cell;
+    vertical-align: top;
+}
+.cover-container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+    padding: 30px;
+}
+
+
+/*
+ * Header
+ */
+.masthead-brand {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.masthead-nav > li {
+    display: inline-block;
+}
+.masthead-nav > li + li {
+    margin-left: 20px;
+}
+.masthead-nav > li > a {
+    padding-right: 0;
+    padding-left: 0;
+    font-size: 80%;
+    font-weight: bold;
+    color: #fff; /* IE8 proofing */
+    color: rgba(255,255,255,1);
+    border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+    background-color: transparent;
+    border-bottom-color: #a9a9a9;
+    border-bottom-color: rgba(255,255,255,.85);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+    color: #fff;
+    border-bottom-color: #fff;
+}
+
+@media (min-width: 768px) {
+    .masthead-brand {
+        float: left;
+    }
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+    padding: 40px;
+    background-color: rgba(0,0,0,.65);
+}
+.cover .btn-lg {
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+    color: #999; /* IE8 proofing */
+    color: rgba(255,255,255,.5);
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+    /* Pull out the header and footer */
+    .masthead {
+        position: fixed;
+        top: 0;
+    }
+    .mastfoot {
+        position: fixed;
+        bottom: 0;
+    }
+    /* Start the vertical centering */
+    .site-wrapper-inner {
+        vertical-align: middle;
+    }
+    /* Handle the widths */
+    .masthead,
+    .mastfoot,
+    .cover-container {
+        width: 100%; /* Must be percentage or pixels for horizontal alignment */
+    }
+    
+}
+
+@media (min-aspect-ratio: 1/1) {
+    body {
+        background-size: 100% auto;
+    }
+}
+
+@media (max-aspect-ratio: 1/1) {
+    body {
+        background-size: auto 100%;
+    }
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+    * {
+        font-size: 110%;
+    }
+    .nav > li {
+        font-size: 250%;
+    }
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #dddddd;
+}

@@ -1,0 +1,196 @@
+<script id="AccomplishmentsView-template" type="text/template">
+</script>
+<script id="AvatarView-template" type="text/template">
+    <div class="avatar">
+        <img class="avatarImage" src="<%=resume.avatar%>"/>
+    </div>
+</script>
+<script id="ContactInfoView-template" type="text/template">
+    <div class="info">
+        <div class="website">
+            <div class="url">
+                <a href="<%=resume.website%>"><i class="fa fa-external-link-square"></i><%=resume.website%></a>
+            </div>
+            <div class="printUrl"><i class="fa fa-external-link-square"></i><%=resume.website%></div>
+        </div>
+        <div class="email">
+            <div class="url">
+                <a href="mailto:<%=resume.email%>"><i class="fa fa-envelope-square"></i><%=resume.email%></a>
+            </div>
+            <div class="printUrl"><i class="fa fa-envelope-square"></i><%=resume.email%></div>
+        </div>
+    </div>
+    <!--
+    <div class="social">
+        <div class="twitter">
+            <div class="url">
+                <a href="https://www.twitter.com/<%=resume.twitter%>"><i class="fa fa-twitter-square"></i><%=resume.twitter%></a>
+            </div>
+            <div class="printUrl"><i class="fa fa-twitter-square"></i>https://www.twitter.com/<%=resume.twitter%></div>
+        </div>
+        <div class="github">
+            <div class="url">
+                <a href="https://www.github.com/<%=resume.github%>"><i class="fa fa-github-square"></i><%=resume.github%></a>
+            </div>
+            <div class="printUrl"><i class="fa fa-github-square"></i>https://www.github.com/<%=resume.github%></div>
+        </div>
+        <div class="linkedin">
+            <div class="url">
+                <a href="<%=resume.linkedin%>"><i class="fa fa-linkedin-square"></i>LinkedIn</a>
+            </div>
+            <div class="printUrl"><i class="fa fa-linkedin-square"></i><%=resume.linkedin%></div>
+        </div>
+    </div>-->
+</script>
+
+<script id="ContainerView-template" type="text/template">
+    <div class="header">
+        <div id="HeadlineView"></div>
+        <div id="AvatarView"></div>
+        <div id="ContactInfoView"></div>
+
+        <div class="space"></div>
+    </div>
+    <div id="ObjectiveView"></div>
+    <div id="SummaryView"></div>
+    <div id="ExpertiseView"></div>
+    <div id="ExperienceView"></div>
+    <div id="AccomplishmentsView"></div>
+    <div id="EducationView"></div>
+    <div id="OpenSourceView"></div>
+    <div id="PublicationsView"></div>
+    <div id="EducationView"></div>
+    <div id="FooterView"></div>
+</script>
+
+<script id="EducationView-template" type="text/template">
+    <div class="studiesContainer">
+        <div class="sectionTitle">Studies</div>
+        <% _.each(resume.studies, function(study) { %>
+        <div class="study">
+            <div class="name"><%=study.name%></div>
+            <div class="start_date"><%=study.start_date%> - <%=study.end_date%></div>
+            <div class="notes"><%=study.notes%></div>
+        </div>
+        <% }); %>
+    </div>
+</script>
+<script id="ExperienceView-template" type="text/template">
+    <div class="sectionTitle">Experience</div>
+    <div class="positionContainer">
+        
+    </div>
+</script>
+<script id="ExpertiseView-template" type="text/template">
+    <div class="sectionTitle">Areas Of Expertise</div>
+    <div class="skillsContainer">
+        <% _.each(resume.skills, function(skill) { %>
+        <div class="skill"><%=skill%></div>
+        <% }); %>
+    </div>
+</script>
+<script id="FooterView-template" type="text/template">
+    <div class="repo">This HTML/CSS/JS document's source code is available at <a href="<%=resume.resume_repo%>"><%=resume.resume_repo%></a></div>
+    <div class="printRepo">This HTML/CSS/JS document's source code is available at <%=resume.resume_repo%></div>
+</script>
+<script id="HeadlineView-template" type="text/template">
+    <div class="name"><%=resume.name%></div>
+    <div class="headline"><%=resume.headline%></div>
+</script>
+<script id="ObjectiveView-template" type="text/template">
+    <div class="objectiveContainer">
+        <div class="sectionTitle">Objective</div>
+        <div class="objective"><%=resume.objective%></div>
+    </div>
+</script>
+<script id="OpenSourceView-template" type="text/template">
+    <div class="contributionContainer">
+      <div class="sectionTitle">Selected Open Source Contributions</div>
+      <% _.each(resume.opensource, function(contribution) { %>
+        <div class="contribution">
+            <div class="role"><%=contribution.role%>, </div>
+            <div class="title"><%=contribution.title%>, </div>
+            <div class="url"><a href="<%=contribution.url%>"><%=contribution.url%></a></div>
+            <div class="printUrl"><%=contribution.url%></div>
+        </div>
+      <% }); %>
+    </div>
+</script>
+
+<script id="PositionView-template" type="text/template">
+    <div class="position">
+        <div class="title"><%=position.title%>, </div>
+        <div class="company"><%=position.company%>, </div>
+        <div class="location"><%=position.location%>, </div>
+        <div class="start_date"><%=position.start_date%> - <%=position.end_date%></div>
+        <% if (position.url) { %>
+        <br />
+        <div class="url"><a href="<%=position.url%>"><%=position.url%></a></div>
+        <div class="printUrl"><%=position.url%></div>
+        <% } %>
+        <div class="description"><%=position.description%></div>
+        <% if (position.projects) { %>
+        <div class="projectsContainer">
+            <div class="sectionSubTitle">Select Projects at Seabourne</div>
+            <div class="projectHistoryContainer"></div>
+            <div class="printProjectHistoryContainer"></div>
+        </div>
+        <% } %>
+    </div>
+</script>
+<script id="PrintProjectHistoryView-template" type="text/template">
+    <div class="printProjectHistoryContainer"></div>
+</script>
+<script id="ProjectHistoryView-template" type="text/template">
+    <div class="projectHistory">
+        <div class="name"><%=project.name%></div>
+        <% if (project.url) { %>
+        <br />
+        <div class="url"><a href="<%=project.url%>"><%=project.url%></a></div>
+        <div class="printUrl"><%=project.url%></div>
+        <% } %>
+        <% if (project.screenshot) { %>
+        <br/>
+        <div class="url"><a href="<%=project.screenshot%>">Screenshot</a></div>
+        <div class="printUrl"><%=project.screenshot%></div>
+        <% } %>
+        <div class="description"><%=project.description%></div>    
+    </div>
+</script>
+<script id="PublicationsView-template" type="text/template">
+    <div class="publicationContainer">
+      <div class="sectionTitle">Published Works</div>
+      <% _.each(resume.publications, function(work) { %>
+        <div class="work">
+            <div class="role"><%=work.role%>, </div>
+            <div class="title"><%=work.title%> </div>
+            <div class="url"><a href="<%=work.url%>"><%=work.url%></a></div>
+            <div class="printUrl"><%=work.url%></div>
+        </div>
+      <% }); %>
+    </div>
+</script>
+
+<script id="SummaryView-template" type="text/template">
+    <div class="summaryContainer">
+        <div class="sectionTitle">Summary</div>
+        <div class="summary"><%=resume.summary%></div>
+    </div>
+</script>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume - Jeremiah Rhoads Hall</title>
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700|Anonymous+Pro:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div id="ContainerView">
+
+</div>
+</body>
+<script type="application/javascript" src="vendor/bootstrap/js/bootstrap.js"></script>
+<script type="application/javascript" src="js/app.js"></script>
+</html>

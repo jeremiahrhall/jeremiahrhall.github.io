@@ -1,0 +1,13 @@
+<script id="PublicationsView-template" type="text/template">
+    <div class="publicationContainer">
+      <div class="sectionTitle">Published Works</div>
+      <% _.each(resume.publications, function(work) { %>
+        <div class="work">
+            <div class="role"><%=work.role%>, </div>
+            <div class="title"><%=work.title%> </div>
+            <div class="url"><a href="<%=work.url%>"><%=work.url%></a></div>
+            <div class="printUrl"><%=work.url%></div>
+        </div>
+      <% }); %>
+    </div>
+</script>

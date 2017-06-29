@@ -1,0 +1,16 @@
+<script id="ProjectHistoryView-template" type="text/template">
+    <div class="projectHistory">
+        <div class="name"><%=project.name%></div>
+        <% if (project.url) { %>
+        <br />
+        <div class="url"><a href="<%=project.url%>"><%=project.url%></a></div>
+        <div class="printUrl"><%=project.url%></div>
+        <% } %>
+        <% if (project.screenshot) { %>
+        <br/>
+        <div class="url"><a href="<%=project.screenshot%>">Screenshot</a></div>
+        <div class="printUrl"><%=project.screenshot%></div>
+        <% } %>
+        <div class="description"><%=project.description%></div>    
+    </div>
+</script>

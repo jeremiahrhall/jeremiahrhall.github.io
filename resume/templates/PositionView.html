@@ -1,0 +1,21 @@
+<script id="PositionView-template" type="text/template">
+    <div class="position">
+        <div class="title"><%=position.title%>, </div>
+        <div class="company"><%=position.company%>, </div>
+        <div class="location"><%=position.location%>, </div>
+        <div class="start_date"><%=position.start_date%> - <%=position.end_date%></div>
+        <% if (position.url) { %>
+        <br />
+        <div class="url"><a href="<%=position.url%>"><%=position.url%></a></div>
+        <div class="printUrl"><%=position.url%></div>
+        <% } %>
+        <div class="description"><%=position.description%></div>
+        <% if (position.projects) { %>
+        <div class="projectsContainer">
+            <div class="sectionSubTitle">Select Projects at Seabourne</div>
+            <div class="projectHistoryContainer"></div>
+            <div class="printProjectHistoryContainer"></div>
+        </div>
+        <% } %>
+    </div>
+</script>

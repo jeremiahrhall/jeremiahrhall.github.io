@@ -1,0 +1,12 @@
+<script id="EducationView-template" type="text/template">
+    <div class="studiesContainer">
+        <div class="sectionTitle">Studies</div>
+        <% _.each(resume.studies, function(study) { %>
+        <div class="study">
+            <div class="name"><%=study.name%></div>
+            <div class="start_date"><%=study.start_date%> - <%=study.end_date%></div>
+            <div class="notes"><%=study.notes%></div>
+        </div>
+        <% }); %>
+    </div>
+</script>

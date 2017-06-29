@@ -1,0 +1,13 @@
+<script id="OpenSourceView-template" type="text/template">
+    <div class="contributionContainer">
+      <div class="sectionTitle">Selected Open Source Contributions</div>
+      <% _.each(resume.opensource, function(contribution) { %>
+        <div class="contribution">
+            <div class="role"><%=contribution.role%>, </div>
+            <div class="title"><%=contribution.title%>, </div>
+            <div class="url"><a href="<%=contribution.url%>"><%=contribution.url%></a></div>
+            <div class="printUrl"><%=contribution.url%></div>
+        </div>
+      <% }); %>
+    </div>
+</script>
